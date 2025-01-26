@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Контакты</title>
+    <link href="D:\Курсы\Вёрстка\css\bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .card-header {
+            background-color: #ffeb3b;
+            /* Жёлтый цвет */
+            color: black;
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid #ddd;
+            text-align: left;
+        }
+
+        .form-control::placeholder {
+            color: #888;
+        }
+
+        .btn-third {
+            width: 33.333%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center">Контактики</h1>
+    <div class="row mt-3">
+        <div class="col-1"></div>
+        <div class="col-5">
+            <div class="form-container">
+                <form action="/" method="post">
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                            </div>
+                            <input type="text" class="form-control" placeholder="Имя" name="name">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                            </div>
+                            <input type="email" class="form-control" placeholder="Email" name="email">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" placeholder="Сообщение" rows="3" name="message"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary btn-third">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-5">
+            <h3>Наши контактиики</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur laborum dolorem
+                nesciunt
+                repudiandae omnis commodi id ex iste, odio expedita provident mollitia eligendi eveniet
+                temporibus sapiente rem nihil, autem quis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dignissimos adipisci
+                nihil
+                culpa accusamus facere omnis, maxime corrupti enim explicabo sit cupiditate reiciendis
+                odit
+                quaerat at asperiores aut deleniti possimus?</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
