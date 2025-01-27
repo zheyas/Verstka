@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e39b1ad9-22fc-4563-ba76-01cf12db5a5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Вёрстка.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML/categories.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML/contacts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML/head.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML/orders.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/categories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/orders.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,17 +36,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Курсы/Вёрстка"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Курсы/Вёрстка/.venv&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Курсы\Вёрстка\.venv" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Курсы\Вёрстка" />
     </key>
