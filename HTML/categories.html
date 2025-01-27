@@ -1,10 +1,116 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Категории</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .card-header {
+            background-color: #ffeb3b;
+            /* Жёлтый цвет */
+            color: black;
+        }
 
+        .form-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid #ddd;
+            text-align: left;
+        }
+
+        .form-control::placeholder {
+            color: #888;
+        }
+
+        .btn-third {
+            width: 33.333%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-2 bg-dark text-white d-flex flex-column justify-content-between" style="min-height: 100vh;">
+            <!-- Заголовок меню -->
+            <div>
+                <h2 class="mt-3 mb-3">Меню</h2>
+                <!-- Ссылки меню -->
+                <div class="d-flex flex-column gap-2">
+                    <a href="head.html" class="text-white text-decoration-none d-flex align-items-center">
+                        <img src="C:\Users\asako\OneDrive\Рабочий стол\logo_меню.png" alt="Иконка дома"
+                            style="width: 20px; height: 20px;" class="me-2"> Главная
+                    </a>
+                    <a href="categories.html" class="text-white text-decoration-none d-flex align-items-center">
+                        <img src="C:\Users\asako\OneDrive\Рабочий стол\logo_категории.png" alt="Иконка спидометра"
+                            style="width: 20px; height: 20px;" class="me-2"> Категории
+                    </a>
+                    <a href="orders.html" class="text-white text-decoration-none d-flex align-items-center">
+                        <img src="C:\Users\asako\OneDrive\Рабочий стол\logo_календарь.png" alt="Иконка календаря"
+                            style="width: 20px; height: 20px;" class="me-2"> Заказы
+                    </a>
+                    <a href="contacts.html" class="text-white text-decoration-none d-flex align-items-center">
+                        <img src="C:\Users\asako\OneDrive\Рабочий стол\logo_контакты.png" alt="Иконка контактов"
+                            style="width: 20px; height: 20px;" class="me-2"> Контакты
+                    </a>
+                </div>
+            </div>
+            <!-- Блок с пользователем -->
+            <div class="d-flex align-items-center mt-auto">
+                <img src="C:\Users\asako\OneDrive\Рабочий стол\logo_аватар.png" alt="Иконка аватара"
+                    style="width: 20px; height: 20px;" class="me-2">
+                <span>Пользователь</span>
+            </div>
+        </div>
+        <div class="col-10">
+            <h1 class="text-center">Категории</h1>
+            <!--<div class="text-center mb-3">Мы рады приветствовать вас на нашем сайте</div>-->
+
+            <!-- Карточки, выровненные по центру -->
+            <div class="d-flex justify-content-center gap-3 mt-5">
+                <!-- Первая карточка -->
+                <div class="card bg-primary text-white" style="width: 18rem;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Колдовской товар 1</h5>
+                        <p class="card-text"> 100 ₿</p>
+                        <p class="card-text">Нуу очень крутое описание товара</p>
+                        <button type="button" class="btn btn-labeled btn-dark mt-auto"><span class="btn-label"><i
+                                    class="fa fa-check"></i></span>Подтвердить</button>
+
+                    </div>
+                </div>
+
+                <!-- Вторая карточка -->
+                <div class="card bg-success text-white" style="width: 18rem;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Колдовской товар 2</h5>
+                        <p class="card-text"> 100 ₿</p>
+                        <p class="card-text">Ещё одно нууу очень крутое описание товара</p>
+                        <button type="button" class="btn btn-labeled btn-dark mt-auto"><span class="btn-label"><i
+                                    class="fa fa-check"></i></span>Подтвердить</button>
+                    </div>
+                </div>
+
+                <!-- Третья карточка -->
+                <div class="card bg-warning text-dark" style="width: 18rem;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Колдовской товар 3</h5>
+                        <p class="card-text"> 100 ₿</p>
+                        <p class="card-text">Последнее нуууу очень крутое описание товара</p>
+                        <button type="button" class="btn btn-labeled btn-dark mt-auto"><span class="btn-label"><i
+                                    class="fa fa-check"></i></span>Подтвердить</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 </body>
+
 </html>
