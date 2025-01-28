@@ -1,14 +1,14 @@
-# created by virtualenv automatically
-.venv/Lib
+   # created by virtualenv automatically
+   .venv/Lib
 
-  # IDE directories
-  .idea/
+   # IDE directories
+   .idea/
 
-  # Python bytecode
-  __pycache__/
+   # Python bytecode
+   __pycache__/
 
-  # Environment
-  venv/
-  env/
-
+   # Environments
+   venv/
+   .env/
    .venv/
+   
