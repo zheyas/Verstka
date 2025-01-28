@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e39b1ad9-22fc-4563-ba76-01cf12db5a5c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/categories.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/orders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +39,7 @@
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop2&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop3&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Курсы/Вёрстка/.venv&quot;
   }
 }</component>

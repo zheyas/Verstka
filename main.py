@@ -1,4 +1,5 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
+import os
 
 # Определяем настройки запуска
 hostName = "localhost"  # Адрес для доступа по сети
@@ -7,32 +8,45 @@ serverPort = 8080  # Порт для доступа по сети
 
 class MyServer(BaseHTTPRequestHandler):
     """
-    Специальный класс, который отвечает за
-    обработку входящих запросов от клиентов
+    Класс, отвечающий за обработку входящих запросов от клиентов.
     """
 
     def do_GET(self):
-        """ Метод для обработки входящих GET-запросов """
-        self.send_response(200)  # Отправка кода ответа
-        self.send_header("Content-type", "text/html")
-        self.end_headers()
+        """ Обработка входящих GET-запросов. """
+        root_dir = os.path.dirname(os.path.abspath(__file__))
 
-        # Чтение содержимого HTML-файла
+        # Определяем путь к запрашиваемому ресурсу
+        if self.path == "/":
+            requested_path = os.path.join(root_dir, "HTML", "contacts.html")
+        elif self.path.startswith("/css"):
+            requested_path = os.path.join(root_dir, self.path[1:])  # Удаляем начальный слэш для корректного пути
+        else:
+            requested_path = os.path.join(root_dir, self.path[1:])
+
+        # Определяем тип контента
+        content_type = "text/html"
+        if requested_path.endswith(".css"):
+            content_type = "text/css"
+
+        # Чтение содержимого файла и отправка ответа
         try:
-            with open("HTML/contacts.html", "r", encoding="utf-8") as file:
-                html_content = file.read()
-
-            # Отправка содержимого HTML-файла в ответе
-            self.wfile.write(bytes(html_content, "utf-8"))
+            with open(requested_path, "rb") as file:
+                self.send_response(200)
+                self.send_header("Content-type", content_type)
+                self.end_headers()
+                self.wfile.write(file.read())
         except FileNotFoundError:
-            # Обработка случая, если файл не найден
+            # Ответ для неизвестных ресурсов
+            self.send_response(404)
+            self.send_header("Content-type", "text/html")
+            self.end_headers()
             self.wfile.write(bytes("<html><head><title>404 Not Found</title></head>"
                                    "<body><h1>File Not Found</h1></body></html>", "utf-8"))
 
     def do_POST(self):
-        """ Метод для обработки входящих POST-запросов """
-        content_length = int(self.headers['Content-Length'])  # Получаем длину данных
-        post_data = self.rfile.read(content_length)  # Читаем данные из тела запроса
+        """ Обработка входящих POST-запросов. """
+        content_length = int(self.headers['Content-Length'])  # Длина данных из заголовков
+        post_data = self.rfile.read(content_length)  # Данные из тела запроса
 
         # Печатаем данные в консоль
         print("Received POST data:")
